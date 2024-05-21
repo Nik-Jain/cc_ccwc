@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ccwc"
+version = "0.1.0"
+description = "A wc-like tool for counting lines, words, bytes, and characters in files"
+readme = "README.md"
+license = {text = "MIT"}  # Correct license field format
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+dependencies = [
+    "typer[all]>=0.4.0"
+]
+
+[project.scripts]
+ccwc = "ccwc.main:app"
